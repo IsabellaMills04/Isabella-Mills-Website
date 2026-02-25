@@ -87,8 +87,14 @@
     box-shadow: 30px 30px #DDA3B9;
     object-position: center;
 
+    transition: scale 0.8s;
+    transition-delay: 1.5s;
     animation: fadeInScale 1s ease 0.15s forwards;
     opacity: 0;
+}
+
+.hero .rightSide img:hover {
+    scale: 1.02;
 }
 
 @keyframes fadeInScale {
