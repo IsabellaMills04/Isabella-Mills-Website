@@ -10,7 +10,6 @@
     color: white;
 }
 
-
 .footer .leftSide {
     flex: 50%;
     height: 100%;
@@ -19,11 +18,9 @@
     padding-left: 70px;
 }
 
-
 .footer .leftSide p {
     font-size: 30px;
 }
-
 
 .footer .rightSide {
     flex: 50%;
@@ -33,7 +30,6 @@
     justify-content: right;
     padding-right: 70px;
 }
-
 
 .footer a {
     color: white;
