@@ -1,0 +1,47 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    color: #224653;
+
+
+}
+
+
+.navbar .leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    font-family: "Cherry Bomb One", system-ui;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+
+.navbar .rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+
+.navbar a {
+    color: #224653;
+    text-decoration: none;  
+    margin: 20px;
+    transition: scale 0.5s;
+}
+
+
+.navbar a:hover {
+    scale: 1.15;
+}

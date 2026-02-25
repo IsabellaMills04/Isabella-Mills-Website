@@ -1,0 +1,42 @@
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.footer .leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+
+.footer .leftSide p {
+    font-size: 30px;
+}
+
+
+.footer .rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 70px;
+}
+
+
+.footer a {
+    color: white;
+    text-decoration: none;  
+    margin: 20px;
+}

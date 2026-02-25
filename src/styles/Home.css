@@ -1,0 +1,103 @@
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.hero {
+    width: 100%;
+    height: 525px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    padding-bottom: 75px;
+}
+
+
+.hero .leftSide, .hero .rightSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+
+.hero .leftSide {
+    width: 44%;
+    margin-top: 100px;
+}
+
+
+.hero .leftSide h1, .hero .leftSide h2, .hero .leftSide p{
+    text-align: right;
+    margin-left: 340px;
+}
+
+
+.hero .leftSide h1{
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    color: #41654B;
+    
+    animation: fadeInScale 1s ease forwards;
+    opacity: 0;
+}
+
+
+.hero .leftSide h2 {
+    font-size: 28px;
+    font-family: "Cherry Bomb One", system-ui;
+    letter-spacing: 1px;
+    margin-top: -10px;
+    color: #D24379;
+
+    animation: fadeInScale 1s ease 0.01s forwards;
+    opacity: 0;
+}
+
+
+.hero .leftSide p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight:500;
+    color: #224654;
+    line-height: 27px;
+    margin-top: 25px;
+    padding-left: 30px;
+
+    animation: fadeInScale 1s ease 0.15s forwards;
+    opacity: 0;
+}
+
+
+.hero .rightSide {
+    width: 56%;
+}
+
+
+.hero .rightSide img {
+    position: absolute;
+    z-index: 2;
+    height: 500px;
+    width:fit-content;
+    border-radius: 225px 225px 0 0;
+    outline: 10px solid #fcfcfc;
+    box-shadow: 30px 30px #DDA3B9;
+    object-position: center;
+
+    animation: fadeInScale 1s ease 0.15s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
