@@ -8,7 +8,7 @@
 /* Hero Styling */
 .hero {
     width: 100%;
-    height: 525px;
+    height: 550px;
     display: flex;
     flex-direction: row;
     font-size: 14px;
@@ -21,6 +21,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 15px;
+    padding-top: 15px;
 }
 
 /* Hero Styling - Left Side */
@@ -37,9 +38,9 @@
 
 
 .hero .leftSide h1{
-    font-size: 60px;
-    font-family: "Montserrat", sans-serif;
-    color: #41654B;
+    font-size: 58px;
+    font-family: var(--montserrat);
+    color: var(--black);
     
     animation: fadeInScale 1s ease forwards;
     opacity: 0;
@@ -48,10 +49,11 @@
 
 .hero .leftSide h2 {
     font-size: 28px;
-    font-family: "Cherry Bomb One", system-ui;
-    letter-spacing: 1px;
+    font-weight: 100;
+    font-family: var(--cherry-bomb-one);
+    letter-spacing: 2px;
     margin-top: -10px;
-    color: #D24379;
+    color: var(--pink-dark);
 
     animation: fadeInScale 1s ease 0.01s forwards;
     opacity: 0;
@@ -59,13 +61,13 @@
 
 
 .hero .leftSide p {
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    font-weight:500;
-    color: #224654;
+    font-size: 20px;
+    font-family: var(--quicksand);
+    font-weight: 500;
+    color: var(--green-dark);
     line-height: 27px;
     margin-top: 25px;
-    padding-left: 30px;
+    padding-left: 25px;
 
     animation: fadeInScale 1s ease 0.15s forwards;
     opacity: 0;
@@ -82,66 +84,18 @@
     height: 500px;
     width:fit-content;
     border-radius: 225px 225px 0 0;
-    outline: 10px solid #fcfcfc;
-    box-shadow: 30px 30px #DDA3B9;
+    outline: 10px solid var(--white);
+    box-shadow: 30px 30px var(--pink-light);
     object-position: center;
 
     animation: fadeInScale 1s ease 0.15s forwards;
     opacity: 0;
 }
 
-/* Project Gallery Styling */
-.gallery {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-}
-
-.gallery-track {
-    display: flex;
-    gap: 100px; 
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.gallery-track.slide-right {
-    animation: slideRight 0.3s ease;
-}
-
-.gallery-track.slide-left {
-    animation: slideLeft 0.3s ease;
-}
-
-.gallery-image {
-    text-align: center;
-    width: 250px;
-    height: 250px;
-}
-
-.gallery-image img {
-    height: 300px;
-    width: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.arrow {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-    color: #DDA3B9;
-    transition: transform 0.2s;
-}
-
-.arrow:hover {
-    transform: scale(1.2);
-}
-
-.arrow:disabled {
-    opacity: 0.3;
-    cursor: default;
-    transform: none;
+/* Project Carousel Styling */
+.project-carousel-container {
+    width: 100%;
+    height: 100%;
 }
 
 /* Keyframes */
@@ -156,24 +110,3 @@
     }
 }
 
-@keyframes slideRight {
-    from {
-        opacity: 1;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(0);
-    }
-}

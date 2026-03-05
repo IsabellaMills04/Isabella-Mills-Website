@@ -1,10 +1,16 @@
 .navbar {
     width: 100%;
-    height: 100px;
+    height: 85px;
     display: flex;
     flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     font-size: 18px;
-    color: #224653;
+    
+    background-color: var(--white);
+    box-shadow: 0px 1px 10px var(--black-shadow);
 }
 
 
@@ -13,10 +19,12 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 70px;
-    font-family: "Cherry Bomb One", system-ui;
-    letter-spacing: 2px;
-    font-size: 40px;
+    padding-left: 55px;
+}
+
+.navbar .leftSide img {
+    width: auto;
+    height: 55px;
 }
 
 
@@ -27,13 +35,13 @@
     align-items: center;
     justify-content: right;
     padding-right: 50px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--montserrat);
     font-weight: 600;
 }
 
 
 .navbar a {
-    color: #224653;
+    color: var(--black);
     text-decoration: none;  
     margin: 20px;
     transition: scale 0.5s;

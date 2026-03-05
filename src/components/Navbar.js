@@ -1,13 +1,16 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import '../styles/Navbar.css'
+import Logo from '../assets/logo.png'
+import Logotype from '../assets/logotype.png'
+
 
 
 function Navbar() {
   return (
     <div className="navbar">
         <div className="leftSide">
-            <p>Isabella Mills</p>
+            <img src={Logotype}/>
         </div>
 
 

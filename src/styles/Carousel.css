@@ -1,0 +1,86 @@
+.project-carousel {
+    background-color: var(--green-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 150px;
+    padding: 40px 0 70px 0;
+    border-radius: 40px;
+}
+
+.project-carousel h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    font-family: var(--cherry-bomb-one);
+    letter-spacing: 2px;
+    color: var(--white);
+    text-shadow: 3px 3px 1px var(--black-shadow);
+    padding-bottom: 45px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 75px;
+}
+
+.carousel-card {
+  flex: 1;
+  min-width: 0;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+/* .carousel-info {
+  padding: 16px;
+  text-align: left;
+}
+
+.carousel-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.carousel-info p {
+  font-size: 0.9rem;
+  color: #555;
+} */
+
+.carousel-btn {
+  background: none;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  color: var(--white);
+  transition: all ease 0.2s;
+}
+
+.carousel-btn svg {
+    stroke: var(--white);
+    stroke-width: 1;
+}
+
+.carousel-btn:hover {
+  background-color: var(--black-shadow)
+}
+

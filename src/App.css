@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
 :root {
-  --pink: #D24379;
+  --green-light: #8fae8c;
+  --green-dark: #4b7a47;
+  --pink-light: #f2a7c2;
+  --pink-dark: #e8718f;
   --white: #fcfcfc;
+  --black: #2f3232;
+  --black-shadow: rgba(47,50,50,0.2);
+
+  --cherry-bomb-one: "Cherry Bomb One", system-ui;
+  --montserrat: "Montserrat", sans-serif;
+  --quicksand: "Quicksand", sans-serif;
 }
 
 .App {
