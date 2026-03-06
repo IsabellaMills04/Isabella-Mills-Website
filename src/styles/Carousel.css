@@ -1,86 +1,101 @@
-.project-carousel {
-    background-color: var(--green-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 100px 150px;
-    padding: 40px 0 70px 0;
-    border-radius: 40px;
-}
-
-.project-carousel h2 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 200;
-    font-family: var(--cherry-bomb-one);
-    letter-spacing: 2px;
-    color: var(--white);
-    text-shadow: 3px 3px 1px var(--black-shadow);
-    padding-bottom: 45px;
+:root {
+    --card-width: 300px;
+    --card-gap: 75px;
 }
 
 .carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-window {
+    width: calc(3 * var(--card-width) + 2 * var(--card-gap));
+    overflow: hidden;
+    padding: 20px 20px;
+    margin: -20px 0;
 }
 
 .carousel-track {
-  display: flex;
-  gap: 75px;
+    display: flex;
+    gap: var(--card-gap);
 }
 
+
 .carousel-card {
-  flex: 1;
-  min-width: 0;
-  background: var(--white);
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+    flex: 0 0 var(--card-width);
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--black-shadow);
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.4s;
+}
+
+.carousel-card:hover {
+    transform: scale(1.02);
 }
 
 .carousel-img {
-  width: 100%;
-  height: 250px;
-  display: block;
+    width: 100%;
+    height: 300px;
+    display: block;
+    position: relative;
+    z-index: 1;
 }
 
-/* .carousel-info {
-  padding: 16px;
-  text-align: left;
+.carousel-info {
+    padding: 10px 16px 16px 16px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: var(--white-tint);
 }
 
 .carousel-info h3 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+    font-size: 24px;
+    font-family: var(--montserrat);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: var(--pink-dark);
 }
 
 .carousel-info p {
-  font-size: 0.9rem;
-  color: #555;
-} */
+    font-size: 16px;
+    font-family: var(--quicksand);
+    font-weight: 600;
+    color: var(--black-half)
+}
 
 .carousel-btn {
-  background: none;
-  border: none;
-  padding: 15px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  flex-shrink: 0;
-  color: var(--white);
-  transition: all ease 0.2s;
+    display: flex;
+    transform-origin: center center;
+    background: none;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+    color: var(--white);
+    transition: all ease 0.4s;
 }
 
 .carousel-btn svg {
+    display: block;
     stroke: var(--white);
     stroke-width: 1;
+    
 }
 
 .carousel-btn:hover {
-  background-color: var(--black-shadow)
+    transform: scale(1.15);
+    background-color: var(--black-shadow);
 }
-

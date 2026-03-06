@@ -3,48 +3,75 @@ import '../styles/Carousel.css'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import projects from '../data/projects'
+import { Link } from 'react-router-dom'
 
 
 function Carousel() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const VISIBLE = 3;
+    const [currentIndex, setCurrentIndex] = useState(VISIBLE);
+    const [animating, setAnimating] = useState(false);
+
+    // Clone last 3 at front, first 3 at end for seamless looping
+    const cloned = [
+        ...projects.slice(-VISIBLE),
+        ...projects,
+        ...projects.slice(0, VISIBLE)
+    ];
 
     const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? projects.length - 3 : prev - 1));
+        if (animating) return;
+        setAnimating(true);
+        setCurrentIndex((prev) => prev - 1);
     };
 
     const handleNext = () => {
-    setCurrentIndex((prev) => (prev === projects.length - 3 ? 0 : prev + 1));
+        if (animating) return;
+        setAnimating(true);
+        setCurrentIndex((prev) => prev + 1);
     };
-    
-    return (
-        <div>
-            <h2>My Projects</h2>
-            
-            <div className="carousel">
-                <button className="carousel-btn prev" onClick={handlePrev}>
-                    <ArrowBackIosNewIcon fontSize="large"/>
-                </button>
 
-                <div className="carousel-track">
-                    {projects.slice(currentIndex, currentIndex + 3).map((project) => (  
-                        <div className="carousel-card" key={project.id}>
+    const handleTransitionEnd = () => {
+        setAnimating(false);
+        if (currentIndex === 0) {
+            setCurrentIndex(projects.length);
+        } else if (currentIndex === cloned.length - VISIBLE) {
+            setCurrentIndex(VISIBLE);
+        }
+    };
+
+    return (
+        <div className="carousel">
+            <button className="carousel-btn prev" onClick={handlePrev}>
+                <ArrowBackIosNewIcon fontSize="large"/>
+            </button>
+
+            <div className="carousel-window">
+                <div
+                    className="carousel-track"
+                    style={{
+                        transform: `translateX(calc(-${currentIndex} * (var(--card-width) + var(--card-gap))))`,
+                        transition: animating ? 'transform 0.4s ease' : 'none'
+                    }}
+                    onTransitionEnd={handleTransitionEnd}
+                >
+                    {cloned.map((project, i) => (
+                        <div className="carousel-card" key={i}>
                             <img src={project.image} alt={project.title} className="carousel-img" />
-                            {/* <div className="carousel-info">
+                            <div className="carousel-info">
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>
-                            </div> */}
+                            </div>
                         </div>
                     ))}
                 </div>
-
-                <button className="carousel-btn next" onClick={handleNext}>
-                    <ArrowForwardIosIcon />
-                </button>
             </div>
-            
-        </div>
 
-    )
+            <button className="carousel-btn next" onClick={handleNext}>
+                <ArrowForwardIosIcon fontSize="large"/>
+            </button>
+        </div>
+    );
 }
+
 
 export default Carousel
