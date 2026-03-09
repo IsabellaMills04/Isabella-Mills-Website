@@ -1,26 +1,57 @@
 .resume-container {
-    margin: 0 300px;
+    margin: 0 300px 80px 300px;
+    max-width: 100%;
 }
 
 .resume-container .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 40px 0 20px 0;
+    margin: 45px 0 30px 0;
+    align-items: center;
 }
 
 .header h2 {
-    font-family: var(--cherry-bomb-one);
+    font-family: var(--montserrat);
     font-size: 40px;
+    font-weight: bold;
+    color: var(--green-dark);
+    animation: fadeInScale 1s ease forwards;
+    opacity: 0;
+}
+
+.header h3 {
+    font-family: var(--cherry-bomb-one);
+    font-size: 30px;
     font-weight: 100;
     letter-spacing: 1px;
-    color: var(--pink-dark)
+    color: var(--pink-dark);
+    margin-top: -15px;
+    animation: fadeInScale 1s ease 0.01s forwards;
+    opacity: 0;
+}
+
+.header a {
+    animation: fadeInScale 1s ease 0.01s forwards;
+    opacity: 0;
 }
 
 .resume-container img {
     width: 100%;
     height: 100%;
-    margin-bottom: 100px;
     box-shadow: 0 4px 10px var(--black-shadow);
+    animation: fadeInScale 1s ease 0.02s forwards;
+    opacity: 0;
+}
 
+/* Keyframes */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

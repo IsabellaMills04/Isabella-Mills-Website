@@ -37,7 +37,7 @@ function Home() {
 
         </div>
         <div className="rightSide">
-
+          
         </div>
       </section>
       
