@@ -13,7 +13,6 @@
     box-shadow: 0px 1px 10px var(--black-shadow);
 }
 
-
 .navbar .leftSide {
     flex: 50%;
     height: 100%;
@@ -22,11 +21,14 @@
     padding-left: 55px;
 }
 
+.navbar .leftSide .logo:hover {
+    scale: 1;
+}
+
 .navbar .leftSide img {
     width: auto;
     height: 55px;
 }
-
 
 .navbar .rightSide {
     flex: 50%;
@@ -39,14 +41,12 @@
     font-weight: 600;
 }
 
-
 .navbar a {
     color: var(--black);
     text-decoration: none;  
     margin: 20px;
-    transition: scale 0.5s;
+    transition: all ease 0.5s;
 }
-
 
 .navbar a:hover {
     scale: 1.15;

@@ -7,13 +7,14 @@
   --pink-dark: #e8718f;
 
   --white: #fcfcfc;
+  --white-half: rgba(255, 255, 255, 0.5);
   --white-tint: rgba(255, 255, 255, 0.95);
 
   --black: #2f3232;
   --black-half: rgba(47,50,50,0.6);
   --black-shadow: rgba(47,50,50,0.2);
 
-  --error: #7B0000     ;
+  --error: #6d0000;
 
   --cherry-bomb-one: "Cherry Bomb One", system-ui;
   --montserrat: "Montserrat", sans-serif;

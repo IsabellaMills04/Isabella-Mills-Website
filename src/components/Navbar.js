@@ -8,7 +8,9 @@ function Navbar() {
   return (
     <div className="navbar">
         <header className="leftSide">
+          <Link to="/" className="logo">
             <img src={Logotype}/>
+          </Link>
         </header>
 
 

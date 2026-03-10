@@ -10,14 +10,13 @@
 .footer .leftSide, .footer .rightSide {
     box-sizing: border-box;
     padding-top: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer .leftSide {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 70px;
+    padding-left: 150px;
     padding-right: 35px;
 }
 
@@ -32,28 +31,24 @@
 }
 
 .footer .leftSide .input {
-    margin: 8px 0;
-    background-color: var(--white);
-}
-
-.footer .leftSide .input {
-    box-sizing: border-box;
     padding: 10px 15px;
     border: none;
     border-radius: 20px;
     font-family: var(--quicksand);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     color: var(--black);
+    background-color: var(--white);
     box-shadow: 0 2px 8px var(--black-shadow);
 }
 
 .footer .leftSide .input:focus {
-    outline: 3px solid var(--green-dark);
+    outline: transparent;
 }
 
 .footer .leftSide .input::placeholder {
-    color: var(--black-half);
+    color: var(--pink-dark);
+    opacity: 0.8;
 }
 
 .footer .leftSide textarea {
@@ -75,6 +70,7 @@
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
+    margin-top: 5px;
 
     color: var(--green-dark);
     background-color: var(--white);
@@ -83,7 +79,7 @@
 
     padding: 10px 20px;
     border-radius: 40px;
-    transition: all ease 0.4s
+    transition: all ease 0.5s
 }
 
 .footer .leftSide .submit .submit-btn:hover {
@@ -96,45 +92,70 @@
     font-family: var(--montserrat);
     font-weight: 500;
     font-size: 18px;
-    align-items: center;
     margin-left: 20px;
 }
 
 
 .footer .rightSide {
-    box-sizing: border-box;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    padding-right: 70px;
-    padding-left: 35px;
+    padding: 30px 35px 25px 35px;
+    margin-right: 100px;
+    justify-content: flex-start;
 }
 
 .footer .rightSide h1 {
-    text-align: right;
+    text-align: center;
+    margin-bottom: 14px;
 }
 
-/* .footer .rightSide .column {
+.footer .rightSide .cards-row {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.footer .rightSide .mini-card {
+    flex: 1;
+    background-color: var(--green-dark);
+    border-radius: 16px;
+    padding: 14px 18px;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    text-align: right;
-    align-items: flex-end;
-} */
+    gap: 24px;
+    box-shadow: 0 2px 8px var(--black-shadow);
+}
+
+.footer .rightSide .mini-card .card-title {
+    font-family: var(--montserrat);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--pink-light);
+    text-shadow: 1px 1px 2px var(--black-shadow);
+    margin-bottom: -4px;
+}
 
 .footer .rightSide .link {
+    width: fit-content;
     font-family: var(--montserrat);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     color: var(--white);
     text-decoration: none;
-    margin-top: 30px;
+    transition: all ease 0.5s;
 }
 
-.footer .rightSide img {
-    width: 150px;
-    margin-top: 30px;
+
+.footer .rightSide .link:hover {
+    transform: scale(1.1);
+}
+.footer .rightSide .link:last-child {
+    margin-bottom: 20px;
 }
 
+.footer .rightSide .logo {
+    width: 75px;
+    border-radius: 50%;
+    box-shadow: 8px 8px var(--white);
+    outline: 5px solid var(--green-dark);
+}
