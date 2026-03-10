@@ -52,8 +52,9 @@
 }
 
 .footer .leftSide textarea {
-    resize: vertical;
+    resize: none;
     height: 150px;
+    overflow: auto;
 }
 
 .footer .leftSide .submit {
