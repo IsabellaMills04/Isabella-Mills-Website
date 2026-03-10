@@ -13,6 +13,8 @@
   --black-half: rgba(47,50,50,0.6);
   --black-shadow: rgba(47,50,50,0.2);
 
+  --error: #7B0000     ;
+
   --cherry-bomb-one: "Cherry Bomb One", system-ui;
   --montserrat: "Montserrat", sans-serif;
   --quicksand: "Quicksand", sans-serif;
@@ -23,8 +25,8 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
-  background-color: #fcfcfc;
+  font-family: var(--montserrat);
+  background-color: var(--white);
 }
 
 

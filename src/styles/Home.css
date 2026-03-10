@@ -121,7 +121,7 @@
     text-shadow: 3px 3px var(--black-shadow);
 }
 
-.link {
+.project-carousel .link {
     display:inline-block;
     box-sizing: border-box;
     font-family: var(--montserrat);
@@ -132,7 +132,6 @@
     color: var(--green-dark);
     background-color: var(--white);
     box-shadow: 0 4px 10px var(--black-shadow);
-    /* border: 2px solid var(--pink-light); */
 
     padding: 10px 20px;
     border-radius: 40px;
@@ -140,15 +139,91 @@
     transition: all ease 0.4s
 }
 
-.link:hover {
+.project-carousel .link:hover {
     color: var(--white);
     background-color: var(--black);
-    /* border-color: transparent; */
     transform: scale(1.1);
 }
 
+.about-container {
+    display: flex;
+    flex-direction: row;
+    margin: 60px 0;
+}
 
+.about-container .leftSide, .about-container .rightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    padding-top: 15px;
+}
 
+.about-container .leftSide {
+    display: flex;
+    align-items: flex-end;
+}
+
+.about-container .leftSide img {
+    width: 525px;
+}
+
+.about-container .rightSide h1, .about-container .rightSide h2, .about-container .rightSide p, .about-container .rightSide .link{
+    margin-right: 250px;
+    margin-left: 10px;
+}
+
+.about-container .rightSide h1 {
+    font-size: 58px;
+    font-family: var(--montserrat);
+    color: var(--green-dark);
+}
+
+.about-container .rightSide h2 {
+    font-size: 28px;
+    font-weight: 100;
+    font-family: var(--cherry-bomb-one);
+    letter-spacing: 2px;
+    margin-top: -15px;
+    color: var(--pink-dark);
+}
+
+.about-container .rightSide p {
+    font-size: 20px;
+    font-family: var(--quicksand);
+    font-weight: 500;
+    color: var(--black);
+    line-height: 27px;
+    margin-top: 25px;
+}
+
+.about-container .rightSide .link {
+    display:inline-block;
+    box-sizing: border-box;
+    width: 175px;
+    text-align: center;
+    font-family: var(--montserrat);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+
+    color: var(--green-dark);
+    background-color: var(--white);
+    border: 3px solid var(--green-dark);
+    box-shadow: 0 4px 10px var(--black-shadow);
+
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-top: 35px;
+    transition: all ease 0.4s
+}
+
+.about-container .link:hover {
+    color: var(--white);
+    background-color: var(--green-dark);
+    transform: scale(1.05);
+}
 
 /* Keyframes */
 @keyframes fadeInScale {

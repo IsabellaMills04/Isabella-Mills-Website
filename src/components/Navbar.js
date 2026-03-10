@@ -7,9 +7,9 @@ import Logotype from '../assets/logotype.png'
 function Navbar() {
   return (
     <div className="navbar">
-        <div className="leftSide">
+        <header className="leftSide">
             <img src={Logotype}/>
-        </div>
+        </header>
 
 
         <nav className="rightSide">
