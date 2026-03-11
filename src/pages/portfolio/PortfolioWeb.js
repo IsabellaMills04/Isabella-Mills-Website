@@ -3,16 +3,18 @@ import '../../styles/Portfolio.css'
 import portfolioData from "../../data/porfolioData"
 import {ImageList, ImageListItem} from "@mui/material"
 
-function PortfolioWeb() {
+
+
+function PortfolioWeb({ showHeader = true, standalone = true}) {
   const webProjects = portfolioData.filter(p => p.category === "web")
   const [zoomedImg, setZoomedImg] = useState(null)
 
 
   return (
-    <div className="container">
-      <h1>Web Development</h1>
-      <h2>Portfolio</h2>
-      <div className="portfolio-web">
+    <div className={standalone ? "container" : ""}>
+      {showHeader && <h1>Web Development</h1>}
+      {showHeader && <h2>Portfolio</h2>}
+      <div className="portfolio">
         {webProjects.map((project, index) => (
           <div className="project-row" key={project.id} style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}>
             <div className="project-images">
@@ -22,7 +24,7 @@ function PortfolioWeb() {
                     <img
                       src={img}
                       alt={`${project.title} ${index + 1}`}
-                      loading="lazy"
+                      loading={index === 0 ? "eager" : "lazy"}  
                       onClick={() => setZoomedImg(img)}
                       style={{ 
                         cursor: "zoom-in", 
@@ -44,11 +46,6 @@ function PortfolioWeb() {
                 ))}
               </div>
               <p>{project.description}</p>
-              {/* <div className="project-tools">
-                {project.tools?.map((tool, index) => (
-                  <h4 key={index}>{tool}</h4>
-                ))}
-              </div> */}
             </div>
 
           </div>
