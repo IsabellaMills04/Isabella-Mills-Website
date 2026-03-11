@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../styles/Carousel.css'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import projects from '../data/projects'
+import projects from '../data/carouselData'
 import { Link } from 'react-router-dom'
 
 

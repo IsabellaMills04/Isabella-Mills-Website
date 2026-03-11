@@ -4,7 +4,10 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import Portfolio from './pages/Portfolio'
+import PortfolioAll from './pages/portfolio/PortfolioAll'
+import PortfolioWeb from './pages/portfolio/PortfolioWeb'
+import PortfolioDesign from './pages/portfolio/PortfolioDesign'
+import PortfolioOther from './pages/portfolio/PortfolioOther'
 import Resume from './pages/Resume'
 import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
 
@@ -31,7 +34,10 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/portfolio" element={<Portfolio/>}/>
+          <Route path="/portfolio" element={<PortfolioAll/>}/>
+          <Route path="/portfolio/web" element={<PortfolioWeb/>}/>
+          <Route path="/portfolio/design" element={<PortfolioDesign/>}/>
+          <Route path="/portfolio/other" element={<PortfolioOther/>}/>
           <Route path="/resume" element={<Resume/>}/>
         </Routes>
 

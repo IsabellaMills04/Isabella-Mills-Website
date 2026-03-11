@@ -1,0 +1,100 @@
+.container {
+    margin: 40px 0;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--montserrat);
+    font-size: 40px;
+    color: var(--green-dark);
+}
+
+h2 {
+    font-family: var(--cherry-bomb-one);
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: -10px;
+    color: var(--pink-dark);
+}
+
+.portfolio-web {
+    padding: 50px 200px ;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+.project-images {
+  flex: 60%;
+}
+
+.project-images p {
+    text-align: center;
+    color: var(--black-half);
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.project-info {
+    flex: 40%;
+}
+
+.project-info h3 {
+    font-family: var(--montserrat);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--green-dark)
+}
+
+.project-info p {
+    font-family: var(--quicksand);
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 22px;
+}
+
+.project-tools {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.project-tools h4 {
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--white);
+    background-color: var(--pink-dark);
+    padding: 8px;
+    border-radius: 18px;
+}
+
+.zoom-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--black-half);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: zoom-out;
+}
+
+.zoom-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+}

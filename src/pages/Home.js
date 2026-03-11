@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Home.css'
 import Isabella from '../assets/isabella.jpg'
-import Asset from '../assets/Asset.png'
+import AboutCollage from '../assets/about.png'
 import Carousel from '../components/Carousel'
 import { Link } from 'react-router-dom'
 
@@ -33,7 +33,7 @@ function Home() {
 
       <section className="about-container">
         <div className="leftSide">
-          <img src={Asset}/>
+          <img src={AboutCollage}/>
         </div>
         <div className="rightSide">
           <h1>A Glimse</h1>
