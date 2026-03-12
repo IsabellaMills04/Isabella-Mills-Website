@@ -16,7 +16,10 @@ function ScrollToTop() {
   const location = useLocation();
   
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const params = new URLSearchParams(location.search)
+    if (!location.hash && !params.get('scrollTo')) {
+      window.scrollTo(0, 0);
+    }
   }, [location]);
 
   return null;

@@ -19,7 +19,6 @@ function Resume() {
             <Button sx={{
               height: '80%',
               width: '80px',
-              // backgroundColor: 'var(--green-dark)',
               color: 'var(--green-dark)',
               border: '3px solid var(--green-dark)',
               fontFamily: 'var(--montserrat)',
@@ -28,7 +27,8 @@ function Resume() {
               padding: '10px 30px',
               transition: 'all ease 0.2s',
               '&:hover': {
-                backgroundColor: 'var(--black)',
+                backgroundColor: 'var(--green-dark)',
+                color: 'var(--white)',
                 transform: 'scale(1.05)',
               }
             }}>

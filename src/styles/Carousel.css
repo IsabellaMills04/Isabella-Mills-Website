@@ -54,6 +54,7 @@
     right: 0;
     z-index: 2;
     background-color: var(--white-tint);
+    box-shadow: 0 -4px 10px var(--black-shadow);
 }
 
 .carousel-info h3 {

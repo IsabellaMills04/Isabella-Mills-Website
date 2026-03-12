@@ -87,8 +87,9 @@
     box-shadow: 30px 30px var(--pink-light);
     object-position: center;
 
-    animation: fadeInScale 1s ease 0.15s forwards;
     opacity: 0;
+    animation: fadeInScale 1s ease 0.15s forwards;
+    
 }
 
 /* Project Carousel Styling */

@@ -11,12 +11,17 @@ function PortfolioDesign({ showHeader = true, standalone = true}) {
     
   return (
     <div className={standalone ? "container" : ""}>
-      {showHeader && <h1>Media Design</h1>}
-      {showHeader && <h2>Portfolio</h2>}
+      {showHeader && <h1 className="fade-in">Media Design</h1>}
+      {showHeader && <h2 className="fade-in-delay-1">Portfolio</h2>}
       <div className="portfolio">
         {designProjects.map((project, index) => (
-          <div className="project-row" key={project.id} style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}>
-            <div className="project-images">
+          <div 
+            className="project-row" 
+            key={project.id} 
+            id={`project-${project.id}`}
+            style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}
+          >
+            <div className={`project-images ${index === 0 ? "fade-in-delay-1" : ""}`}>
               {project.images.length === 1 ? (
                 <img
                   src={project.images[0]}
@@ -33,7 +38,12 @@ function PortfolioDesign({ showHeader = true, standalone = true}) {
                   }}
                 />
               ) : (
-                <ImageList variant="masonry" cols={project.images.length === 2 ? 2 : 3} gap={20} style={{padding:"10px 10px 15px 10px"}}>
+                <ImageList 
+                  variant="masonry" 
+                  cols={project.images.length === 2 ? 2 : 3} 
+                  gap={20} 
+                  style={{padding:"10px 10px 15px 10px"}}
+                >
                   {project.images.map((img, index) => (
                     <ImageListItem key={index}>
                       <img
@@ -55,13 +65,13 @@ function PortfolioDesign({ showHeader = true, standalone = true}) {
             </div>
 
             <div className="project-info">
-              <h3>{project.title}</h3>
+              <h3 className="fade-in-delay-2">{project.title}</h3>
               <div className="project-tools">
                 {project.tools?.map((tool, index) => (
-                  <h4 key={index}>{tool}</h4>
+                  <h4 key={index} className="fade-in-delay-3">{tool}</h4>
                 ))}
               </div>
-              <p>{project.description}</p>
+              <p className="fade-in-delay-3">{project.description}</p>
             </div>
 
           </div>

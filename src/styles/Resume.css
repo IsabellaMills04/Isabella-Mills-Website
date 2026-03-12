@@ -1,6 +1,7 @@
 .resume-container {
     margin: 0 300px 80px 300px;
     max-width: 100%;
+    min-height: 600px;
 }
 
 .resume-container .header {

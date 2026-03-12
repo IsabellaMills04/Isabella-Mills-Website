@@ -3,20 +3,24 @@ import '../styles/Carousel.css'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import projects from '../data/carouselData'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 function Carousel() {
     const VISIBLE = 3;
     const [currentIndex, setCurrentIndex] = useState(VISIBLE);
     const [animating, setAnimating] = useState(false);
+    const navigate = useNavigate();
 
-    // Clone last 3 at front, first 3 at end for seamless looping
     const cloned = [
         ...projects.slice(-VISIBLE),
         ...projects,
         ...projects.slice(0, VISIBLE)
     ];
+
+    const handleCardClick = (project) => { 
+        navigate(`/portfolio?scrollTo=project-${project.portfolioId}`)
+    }
 
     const handlePrev = () => {
         if (animating) return;
@@ -55,7 +59,12 @@ function Carousel() {
                     onTransitionEnd={handleTransitionEnd}
                 >
                     {cloned.map((project, i) => (
-                        <div className="carousel-card" key={i}>
+                        <div 
+                            className="carousel-card" 
+                            key={i}
+                            onClick={() => handleCardClick(project)}
+                            style={{ cursor: 'pointer' }}
+                        >
                             <img src={project.image} alt={project.title} className="carousel-img" />
                             <div className="carousel-info">
                                 <h3>{project.title}</h3>

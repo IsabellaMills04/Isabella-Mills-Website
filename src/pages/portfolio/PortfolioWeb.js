@@ -12,13 +12,23 @@ function PortfolioWeb({ showHeader = true, standalone = true}) {
 
   return (
     <div className={standalone ? "container" : ""}>
-      {showHeader && <h1>Web Development</h1>}
-      {showHeader && <h2>Portfolio</h2>}
+      {showHeader && <h1 className="fade-in">Web Development</h1>}
+      {showHeader && <h2 className="fade-in-delay-1">Portfolio</h2>}
       <div className="portfolio">
         {webProjects.map((project, index) => (
-          <div className="project-row" key={project.id} style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}>
-            <div className="project-images">
-              <ImageList variant="masonry" cols={3} gap={20} style={{padding:"10px 10px 15px 10px"}} >
+          <div 
+            className="project-row" 
+            key={project.id} 
+            id={`project-${project.id}`}
+            style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}
+          >
+            <div className={`project-images ${index === 0 ? "fade-in-delay-1" : ""}`}>
+              <ImageList 
+                variant="masonry" 
+                cols={3} 
+                gap={20} 
+                style={{padding:"10px 10px 15px 10px"}} 
+              >
                 {project.images.map((img, index) => (
                   <ImageListItem key={index}>
                     <img
@@ -39,13 +49,13 @@ function PortfolioWeb({ showHeader = true, standalone = true}) {
             </div>
 
             <div className="project-info">
-              <h3>{project.title}</h3>
+              <h3 className="fade-in-delay-2">{project.title}</h3>
               <div className="project-tools">
                 {project.tools?.map((tool, index) => (
-                  <h4 key={index}>{tool}</h4>
+                  <h4 key={index} className="fade-in-delay-3">{tool}</h4>
                 ))}
               </div>
-              <p>{project.description}</p>
+              <p className="fade-in-delay-3">{project.description}</p>
             </div>
 
           </div>
