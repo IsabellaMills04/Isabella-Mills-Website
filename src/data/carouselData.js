@@ -16,7 +16,7 @@ const carouselData = [
         id: 2,
         portfolioId: 4,
         title: "WebCraft Magazine",
-        description: "Designed a fake Digital Media and Web Development magazine.",
+        description: "Designed a fictional Digital Media and Web Development magazine.",
         image: WebCraft,
     },
     {
@@ -30,7 +30,7 @@ const carouselData = [
         id: 4,
         portfolioId: 2,
         title: "Furry Fresh Grooming Website",
-        description: "Group project designing a website for an imaginary client.",
+        description: "Group project designing a website for a fictional client.",
         image: furryFreshGrooming,
     },
 ]
