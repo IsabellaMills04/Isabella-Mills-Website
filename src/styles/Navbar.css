@@ -13,7 +13,7 @@
     box-shadow: 0px 1px 10px var(--black-shadow);
 }
 
-.navbar .leftSide {
+.nav-left {
     flex: 50%;
     height: 100%;
     display: flex;
@@ -21,17 +21,17 @@
     padding-left: 55px;
 }
 
-.navbar .leftSide .logo:hover {
+.nav-left .logo:hover {
     scale: 1;
 }
 
-.navbar .leftSide img {
+.nav-left img {
     width: auto;
     height: 55px;
 }
 
-.navbar .rightSide {
-    flex: 50%;
+.nav-right {
+    flex: 1;
     height: 100%;
     display: flex;
     align-items: center;

@@ -1,7 +1,7 @@
 .about-container {
-    /* grid-template-columns: auto auto; */
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    margin: 60px 0;
     gap: 100px;
 }
 .about-hero {
@@ -64,3 +64,5 @@
 .fun-section p {
     text-align: center;
 }
+
+

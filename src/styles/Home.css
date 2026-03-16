@@ -16,7 +16,7 @@
 }
 
 
-.hero-left, .hero-right {
+.hero .leftSide, .hero .rightSide{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,19 +25,19 @@
 }
 
 /* Hero Styling - Left Side */
-.hero-left {
+.hero .leftSide {
     width: 44%;
     margin-top: 100px;
 }
 
 
-.hero-left h1, .hero-left h2, .hero-left p{
+.hero .leftSide h1, .hero .leftSide h2, .hero .leftSide p{
     text-align: right;
     margin-left: 340px;
 }
 
 
-.hero-left h1{
+.hero .leftSide h1{
     font-size: 58px;
     font-family: var(--montserrat);
     color: var(--green-dark);
@@ -47,7 +47,7 @@
 }
 
 
-.hero-left h2 {
+.hero .leftSide h2 {
     font-size: 28px;
     font-weight: 100;
     font-family: var(--cherry-bomb-one);
@@ -59,7 +59,7 @@
     opacity: 0;
 }
 
-.hero-left p {
+.hero .leftSide p {
     font-size: 20px;
     font-family: var(--quicksand);
     font-weight: 500;
@@ -73,11 +73,11 @@
 }
 
 /* Hero Styling - Right Side */
-.hero-right {
+.hero .rightSide {
     width: 56%;
 }
 
-.hero-right img {
+.hero .rightSide img {
     position: absolute;
     z-index: 2;
     height: 500px;
@@ -87,9 +87,8 @@
     box-shadow: 30px 30px var(--pink-light);
     object-position: center;
 
-    opacity: 0;
     animation: fadeInScale 1s ease 0.15s forwards;
-    
+    opacity: 0;
 }
 
 /* Project Carousel Styling */
@@ -145,13 +144,13 @@
     transform: scale(1.1);
 }
 
-.about-container {
+.home-about-container {
     display: flex;
     flex-direction: row;
     margin: 60px 0;
 }
 
-.home-about-left, .home-about-right {
+.home-about-container .leftSide, .home-about-container .rightSide {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -160,27 +159,27 @@
     padding-top: 15px;
 }
 
-.home-about-left {
+.home-about-container .leftSide {
     display: flex;
     align-items: flex-end;
 }
 
-.home-about-left img {
+.home-about-container .leftSide img {
     width: 525px;
 }
 
-.home-about-right h1, .home-about-right h2, .home-about-right p, .home-about-right .link{
+.home-about-container .rightSide h1, .home-about-container .rightSide h2, .home-about-container .rightSide p, .about-container .rightSide .link{
     margin-right: 250px;
     margin-left: 10px;
 }
 
-.home-about-right h1 {
+.home-about-container .rightSide h1 {
     font-size: 58px;
     font-family: var(--montserrat);
     color: var(--green-dark);
 }
 
-.home-about-right h2 {
+.home-about-container .rightSide h2 {
     font-size: 28px;
     font-weight: 100;
     font-family: var(--cherry-bomb-one);
@@ -189,7 +188,7 @@
     color: var(--pink-dark);
 }
 
-.home-about-right p {
+.home-about-container .rightSide p {
     font-size: 20px;
     font-family: var(--quicksand);
     font-weight: 500;
@@ -198,7 +197,7 @@
     margin-top: 25px;
 }
 
-.home-about-right .link {
+.home-about-container .rightSide .link {
     display:inline-block;
     box-sizing: border-box;
     width: 175px;
@@ -219,7 +218,7 @@
     transition: all ease 0.5s
 }
 
-.home-about-right .link:hover {
+.home-about-container .link:hover {
     color: var(--white);
     background-color: var(--green-dark);
     transform: scale(1.05);

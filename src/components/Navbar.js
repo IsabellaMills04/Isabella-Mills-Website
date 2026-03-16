@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom'
 import '../styles/Navbar.css'
 import Logotype from '../assets/logotype.png'
 import {Menu, MenuItem, Button} from '@mui/material';
-
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 
 function Navbar() {
@@ -15,14 +16,14 @@ function Navbar() {
   const handleClose = () => setAnchorEl(null);
   return (
     <div className="navbar">
-        <header className="leftSide">
+        <header className="nav-left">
           <Link to="/" className="logo">
             <img src={Logotype}/>
           </Link>
         </header>
 
-
-        <nav className="rightSide">
+        {/* Laptop-Desktop Navbar */}
+        <nav className="nav-right">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
 
@@ -103,12 +104,9 @@ function Navbar() {
                 Other
               </MenuItem>
             </Menu>
-            
             <Link to="/resume">Resume</Link>
-            {/* <button>
-              <ReorderIcon/>
-            </button> */}
         </nav>
+
     </div>
   )
 }

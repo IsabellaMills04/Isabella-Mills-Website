@@ -11,14 +11,14 @@ function Home() {
     <div className="home">
 
       <section className="hero">
-        <div className="hero-left">
+        <div className="leftSide">
           <h1>Welcome</h1>
           <h2>to my portfolio!</h2>
           <p>I’m a Digital Media: Computer Science student passionate
             about creating modern, user-friendly web apps. Check out
             my work and the projects I’ve built along the way!</p>
         </div>
-        <div className="hero-right">
+        <div className="rightSide">
             <img src={Isabella}/>
         </div>
       </section>
@@ -31,11 +31,11 @@ function Home() {
         </div>
       </section>
 
-      <section className="about-container">
-        <div className="home-about-left">
-          <img src={AboutCollage}/>
+      <section className="home-about-container">
+        <div className="leftSide">
+            <img src={AboutCollage}/>
         </div>
-        <div className="home-about-right">
+        <div className="rightSide">
           <h1>A Glimse</h1>
           <h2>into the aspiring developer.</h2>
           <p>I’m a Computer Science and Digital Media student passionate 
@@ -45,10 +45,9 @@ function Home() {
           <Link className="link" to="/about">Learn More</Link>
         </div>
       </section>
-      
+
     </div>
   )
 }
-
 
 export default Home;
