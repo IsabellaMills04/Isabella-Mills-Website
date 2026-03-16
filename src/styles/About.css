@@ -1,0 +1,66 @@
+.about-container {
+    /* grid-template-columns: auto auto; */
+    display: flex;
+    flex-direction: column;;
+    gap: 100px;
+}
+.about-hero {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.about-container .leftSide, .about-container .rightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.about-container .leftSide img {
+    width: 400px;
+    height: 100%;
+}
+
+.about-container .rightSide {
+    padding-right: 200px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.about-container .rightSide h1, .about-container .rightSide h2, .about-container .rightSide p{
+    text-align: left;
+}
+
+.about-container .rightSide h1 {
+    font-size: 58px;
+}
+
+.about-container .rightSide h2 {
+    font-size: 28px;
+    margin-top: -15px;
+}
+
+.about-container .rightSide p {
+    padding-right: 140px;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 25px;
+}
+
+.life-section {
+    margin: 0 400px 0 400px;
+}
+
+.fun-section {
+    margin: 0 400px 0 400px;
+}
+
+.fun-section p {
+    text-align: center;
+}

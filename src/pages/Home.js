@@ -11,14 +11,14 @@ function Home() {
     <div className="home">
 
       <section className="hero">
-        <div className="leftSide">
+        <div className="hero-left">
           <h1>Welcome</h1>
           <h2>to my portfolio!</h2>
           <p>I’m a Digital Media: Computer Science student passionate
             about creating modern, user-friendly web apps. Check out
             my work and the projects I’ve built along the way!</p>
         </div>
-        <div className="rightSide">
+        <div className="hero-right">
             <img src={Isabella}/>
         </div>
       </section>
@@ -32,10 +32,10 @@ function Home() {
       </section>
 
       <section className="about-container">
-        <div className="leftSide">
+        <div className="home-about-left">
           <img src={AboutCollage}/>
         </div>
-        <div className="rightSide">
+        <div className="home-about-right">
           <h1>A Glimse</h1>
           <h2>into the aspiring developer.</h2>
           <p>I’m a Computer Science and Digital Media student passionate 

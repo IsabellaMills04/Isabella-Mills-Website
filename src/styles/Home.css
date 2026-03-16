@@ -16,7 +16,7 @@
 }
 
 
-.hero .leftSide, .hero .rightSide{
+.hero-left, .hero-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,19 +25,19 @@
 }
 
 /* Hero Styling - Left Side */
-.hero .leftSide {
+.hero-left {
     width: 44%;
     margin-top: 100px;
 }
 
 
-.hero .leftSide h1, .hero .leftSide h2, .hero .leftSide p{
+.hero-left h1, .hero-left h2, .hero-left p{
     text-align: right;
     margin-left: 340px;
 }
 
 
-.hero .leftSide h1{
+.hero-left h1{
     font-size: 58px;
     font-family: var(--montserrat);
     color: var(--green-dark);
@@ -47,7 +47,7 @@
 }
 
 
-.hero .leftSide h2 {
+.hero-left h2 {
     font-size: 28px;
     font-weight: 100;
     font-family: var(--cherry-bomb-one);
@@ -59,7 +59,7 @@
     opacity: 0;
 }
 
-.hero .leftSide p {
+.hero-left p {
     font-size: 20px;
     font-family: var(--quicksand);
     font-weight: 500;
@@ -73,11 +73,11 @@
 }
 
 /* Hero Styling - Right Side */
-.hero .rightSide {
+.hero-right {
     width: 56%;
 }
 
-.hero .rightSide img {
+.hero-right img {
     position: absolute;
     z-index: 2;
     height: 500px;
@@ -151,7 +151,7 @@
     margin: 60px 0;
 }
 
-.about-container .leftSide, .about-container .rightSide {
+.home-about-left, .home-about-right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -160,27 +160,27 @@
     padding-top: 15px;
 }
 
-.about-container .leftSide {
+.home-about-left {
     display: flex;
     align-items: flex-end;
 }
 
-.about-container .leftSide img {
+.home-about-left img {
     width: 525px;
 }
 
-.about-container .rightSide h1, .about-container .rightSide h2, .about-container .rightSide p, .about-container .rightSide .link{
+.home-about-right h1, .home-about-right h2, .home-about-right p, .home-about-right .link{
     margin-right: 250px;
     margin-left: 10px;
 }
 
-.about-container .rightSide h1 {
+.home-about-right h1 {
     font-size: 58px;
     font-family: var(--montserrat);
     color: var(--green-dark);
 }
 
-.about-container .rightSide h2 {
+.home-about-right h2 {
     font-size: 28px;
     font-weight: 100;
     font-family: var(--cherry-bomb-one);
@@ -189,7 +189,7 @@
     color: var(--pink-dark);
 }
 
-.about-container .rightSide p {
+.home-about-right p {
     font-size: 20px;
     font-family: var(--quicksand);
     font-weight: 500;
@@ -198,7 +198,7 @@
     margin-top: 25px;
 }
 
-.about-container .rightSide .link {
+.home-about-right .link {
     display:inline-block;
     box-sizing: border-box;
     width: 175px;
@@ -219,7 +219,7 @@
     transition: all ease 0.5s
 }
 
-.about-container .link:hover {
+.home-about-right .link:hover {
     color: var(--white);
     background-color: var(--green-dark);
     transform: scale(1.05);
