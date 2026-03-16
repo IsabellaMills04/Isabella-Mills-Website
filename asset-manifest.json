@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Isabella-Mills-Website/static/css/main.60bdbdcd.css",
-    "main.js": "/Isabella-Mills-Website/static/js/main.d95cbf07.js",
+    "main.css": "/Isabella-Mills-Website/static/css/main.cfe89f69.css",
+    "main.js": "/Isabella-Mills-Website/static/js/main.a0ae3311.js",
     "static/js/453.fbfbb3e3.chunk.js": "/Isabella-Mills-Website/static/js/453.fbfbb3e3.chunk.js",
     "static/media/isabella.jpg": "/Isabella-Mills-Website/static/media/isabella.8c720986b0ebe04023bf.jpg",
+    "static/media/isabella2.jpg": "/Isabella-Mills-Website/static/media/isabella2.b549f2f85de6000c313c.jpg",
     "static/media/about.png": "/Isabella-Mills-Website/static/media/about.2d6f906d069c00ac2e89.png",
     "static/media/research.jpg": "/Isabella-Mills-Website/static/media/research.214c17a3b14d8432399e.jpg",
     "static/media/furryFreshGrooming.jpg": "/Isabella-Mills-Website/static/media/furryFreshGrooming.ac9d1cec28b31ee613f0.jpg",
@@ -49,12 +50,12 @@
     "static/media/logo.png": "/Isabella-Mills-Website/static/media/logo.38da208f302e724857d2.png",
     "static/media/logotype.png": "/Isabella-Mills-Website/static/media/logotype.be8606f3e9614ed80993.png",
     "index.html": "/Isabella-Mills-Website/index.html",
-    "main.60bdbdcd.css.map": "/Isabella-Mills-Website/static/css/main.60bdbdcd.css.map",
-    "main.d95cbf07.js.map": "/Isabella-Mills-Website/static/js/main.d95cbf07.js.map",
+    "main.cfe89f69.css.map": "/Isabella-Mills-Website/static/css/main.cfe89f69.css.map",
+    "main.a0ae3311.js.map": "/Isabella-Mills-Website/static/js/main.a0ae3311.js.map",
     "453.fbfbb3e3.chunk.js.map": "/Isabella-Mills-Website/static/js/453.fbfbb3e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60bdbdcd.css",
-    "static/js/main.d95cbf07.js"
+    "static/css/main.cfe89f69.css",
+    "static/js/main.a0ae3311.js"
   ]
 }
