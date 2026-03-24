@@ -22,9 +22,9 @@ function Resume() {
               color: 'var(--green-dark)',
               border: '3px solid var(--green-dark)',
               fontFamily: 'var(--montserrat)',
-              fontSize: '18px',
+              fontSize: { xs: '14px', md: '18px' },
               borderRadius: '30px',
-              padding: '10px 30px',
+              padding: { xs: '8px 16px', md: '10px 30px' },
               transition: 'all ease 0.2s',
               '&:hover': {
                 backgroundColor: 'var(--green-dark)',

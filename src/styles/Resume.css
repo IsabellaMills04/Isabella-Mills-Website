@@ -56,3 +56,18 @@
         transform: scale(1);
     }
 }
+
+@media (max-width: 480px) {
+    .resume-container {
+        margin: 0 20px 40px 20px;
+    }
+
+    .header h2 {
+        font-size: 1.75rem;
+    }
+
+    .header h3 {
+        margin-top: -10px;
+        font-size: 1.25rem;
+    }
+}
