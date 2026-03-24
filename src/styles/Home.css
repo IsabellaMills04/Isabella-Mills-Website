@@ -11,7 +11,7 @@
     height: 550px;
     display: flex;
     flex-direction: row;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding-bottom: 75px;
 }
 
@@ -40,7 +40,7 @@
 
 
 .hero .leftSide h1{
-    font-size: 58px;
+    font-size: 3.625rem;
     font-family: var(--montserrat);
     color: var(--green-dark);
     
@@ -50,7 +50,7 @@
 
 
 .hero .leftSide h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 100;
     font-family: var(--cherry-bomb-one);
     letter-spacing: 2px;
@@ -62,7 +62,7 @@
 }
 
 .hero .leftSide p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: var(--quicksand);
     font-weight: 500;
     color: var(--black);
@@ -113,7 +113,7 @@
 
 .project-carousel h2 {
     font-family: var(--cherry-bomb-one);
-    font-size: 45px;
+    font-size: 2.813rem;
     font-weight: 100;
     text-align: center;
     color: var(--white);
@@ -126,7 +126,7 @@
     display:inline-block;
     box-sizing: border-box;
     font-family: var(--montserrat);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     text-decoration: none;
 
@@ -178,13 +178,13 @@
 }
 
 .home-about-container .rightSide h1 {
-    font-size: 58px;
+    font-size: 3.625rem;
     font-family: var(--montserrat);
     color: var(--green-dark);
 }
 
 .home-about-container .rightSide h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 100;
     font-family: var(--cherry-bomb-one);
     letter-spacing: 2px;
@@ -193,7 +193,7 @@
 }
 
 .home-about-container .rightSide p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: var(--quicksand);
     font-weight: 500;
     color: var(--black);
@@ -207,7 +207,7 @@
     width: 175px;
     text-align: center;
     font-family: var(--montserrat);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     text-decoration: none;
 
@@ -257,7 +257,7 @@
     .hero .leftSide {
         margin: 0;
         padding: 0;
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .hero .leftSide h1,
@@ -269,18 +269,18 @@
     }
 
     .hero .leftSide h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .hero .leftSide h2 {
-        font-size: 25px;
+        font-size: 1.563rem;
         margin-top: -10px;
     }
 
     .hero .leftSide p {
-        font-size: 14px;
+        font-size: 1rem;
         line-height: 24px;
-        margin: 0 50px;
+        margin: 0 80px;
         margin-top: 10px;
     }
 
@@ -293,11 +293,33 @@
         margin: 0;
         padding: 0;
         position: static;
-        height: 250px;
+        height: 300px;
+        width: auto;
+        max-width: 100%;
+        object-fit: cover;
         outline: 5px solid var(--white);
         box-shadow: 15px 15px var(--pink-light);
         box-sizing: border-box;
         margin-top: 20px;
+    }
+
+    .project-carousel-container {
+        margin: 50px 0 70px;
+    }
+    .project-carousel {
+        margin: 20px 20px;
+        border-radius: 40px;
+        padding: 20px 0 25px 0;
+    }
+
+    .project-carousel h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .project-carousel .link {
+        margin-top: 20px;
+        font-size: 0.875rem;
     }
 
     .home-about-container {
@@ -341,26 +363,27 @@
     }
 
     .home-about-container .rightSide h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .home-about-container .rightSide h2 {
-        font-size: 25px;
+        font-size: 1.563rem;
         margin-top: -5px;
-        padding: 0 30px;
+        padding: 0 50px;
         line-height: 26px;
     }
 
     .home-about-container .rightSide p {
-        font-size: 14px;
+        font-size: 1rem;
         line-height: 24px;
-        margin: 0 50px;
+        margin: 0 80px;
         margin-top: 15px;
     }
 
     .home-about-container .rightSide .link {
-        margin: 20px 0 40px;
+        margin: 20px 0 60px;
         align-self: center;
+        font-size: 0.875rem;
     }
 
 

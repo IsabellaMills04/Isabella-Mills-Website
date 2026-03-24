@@ -1,13 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/Carousel.css'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import projects from '../data/carouselData'
 import { useNavigate } from 'react-router-dom'
 
+function useIsMobile() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+
+    useEffect(() => {
+        const handler = () => setIsMobile(window.innerWidth <= 480);
+        window.addEventListener('resize', handler);
+        return () => window.removeEventListener('resize', handler);
+    }, []);
+
+    return isMobile;
+}
 
 function Carousel() {
-    const VISIBLE = 3;
+    const isMobile = useIsMobile();
+    const VISIBLE = isMobile ? 1 : 3;
     const [currentIndex, setCurrentIndex] = useState(VISIBLE);
     const [animating, setAnimating] = useState(false);
     const navigate = useNavigate();

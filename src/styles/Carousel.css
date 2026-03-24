@@ -100,3 +100,38 @@
     transform: scale(1.15);
     background-color: var(--black-shadow);
 }
+
+@media (max-width: 480px) {
+    :root {
+        --card-width: 200px;
+        --card-gap: 30px;
+    }
+
+    .carousel-window {
+        width: calc(1 * var(--card-width) + 0 * var(--card-gap));
+        padding: 20px 10px;
+    }
+
+    .carousel-img {
+        height: 200px;
+    }
+
+    .carousel-info h3 {
+        font-size: 18px;
+    }
+
+    .carousel-info p {
+        font-size: 13px;
+    }
+
+    .project-carousel {
+        margin: 20px 20px;
+        border-radius: 40px;
+        padding: 20px 0 25px 0;
+    }
+
+    .project-carousel h2 {
+        font-size: 2rem;
+    }
+
+}
