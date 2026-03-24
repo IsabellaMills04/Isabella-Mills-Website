@@ -294,7 +294,6 @@
         padding: 0;
         position: static;
         height: 250px;
-        object-fit: cover;
         outline: 5px solid var(--white);
         box-shadow: 15px 15px var(--pink-light);
         box-sizing: border-box;

@@ -1,46 +1,46 @@
-import Spark1 from "../assets/portfolio/spark1.webp"
-import Spark2 from "../assets/portfolio/spark2.webp"
-import Spark3 from "../assets/portfolio/spark3.webp"
-import Spark4 from "../assets/portfolio/spark4.webp"
-import Spark5 from "../assets/portfolio/spark5.webp"
-import Spark6 from "../assets/portfolio/spark6.webp"
-import Spark7 from "../assets/portfolio/spark7.webp"
+import Spark1 from "../assets/portfolio/spark1.jpg"
+import Spark2 from "../assets/portfolio/spark2.jpg"
+import Spark3 from "../assets/portfolio/spark3.jpg"
+import Spark4 from "../assets/portfolio/spark4.jpg"
+import Spark5 from "../assets/portfolio/spark5.jpg"
+import Spark6 from "../assets/portfolio/spark6.jpg"
+import Spark7 from "../assets/portfolio/spark7.jpg"
 
-import Furry1 from "../assets/portfolio/furry1.webp"
-import Furry2 from "../assets/portfolio/furry2.webp"
-import Furry3 from "../assets/portfolio/furry3.webp"
-import Furry4 from "../assets/portfolio/furry4.webp"
-import Furry5 from "../assets/portfolio/furry5.webp"
-import Furry6 from "../assets/portfolio/furry6.webp"
+import Furry1 from "../assets/portfolio/furry1.jpg"
+import Furry2 from "../assets/portfolio/furry2.jpg"
+import Furry3 from "../assets/portfolio/furry3.jpg"
+import Furry4 from "../assets/portfolio/furry4.jpg"
+import Furry5 from "../assets/portfolio/furry5.jpg"
+import Furry6 from "../assets/portfolio/furry6.jpg"
 
-import elMags1 from "../assets/portfolio/elMags1.webp"
-import elMags2 from "../assets/portfolio/elMags2.webp"
+import elMags1 from "../assets/portfolio/elMags1.jpg"
+import elMags2 from "../assets/portfolio/elMags2.jpg"
 
-import webCraft1 from "../assets/portfolio/webCraft1.webp"
-import webCraft2 from "../assets/portfolio/webCraft2.webp"
-import webCraft3 from "../assets/portfolio/webCraft3.webp"
-import webCraft4 from "../assets/portfolio/webCraft4.webp"
-import webCraft5 from "../assets/portfolio/webCraft5.webp"
-import webCraft6 from "../assets/portfolio/webCraft6.webp"
+import webCraft1 from "../assets/portfolio/webCraft1.jpg"
+import webCraft2 from "../assets/portfolio/webCraft2.jpg"
+import webCraft3 from "../assets/portfolio/webCraft3.jpg"
+import webCraft4 from "../assets/portfolio/webCraft4.jpg"
+import webCraft5 from "../assets/portfolio/webCraft5.jpg"
+import webCraft6 from "../assets/portfolio/webCraft6.jpg"
 
-import SigKapBrochure1 from "../assets/portfolio/sigKapBrochure1.webp"
-import SigKapBrochure2 from "../assets/portfolio/sigKapBrochure2.webp"
+import SigKapBrochure1 from "../assets/portfolio/sigKapBrochure1.jpg"
+import SigKapBrochure2 from "../assets/portfolio/sigKapBrochure2.jpg"
 
-import HocoBanner1 from "../assets/portfolio/hocoBanner1.webp"
-import HocoBanner2 from "../assets/portfolio/hocoBanner2.webp"
+import HocoBanner1 from "../assets/portfolio/hocoBanner1.jpg"
+import HocoBanner2 from "../assets/portfolio/hocoBanner2.jpg"
 
-import GreekWeek1 from "../assets/portfolio/greekWeek1.webp"
-import GreekWeek2 from "../assets/portfolio/greekWeek2.webp"
+import GreekWeek1 from "../assets/portfolio/greekWeek1.jpg"
+import GreekWeek2 from "../assets/portfolio/greekWeek2.jpg"
 
-import InstagramAd from "../assets/portfolio/instagramAd.webp"
-import KZLXFlyer from "../assets/portfolio/KZLXFlyer.webp"
+import InstagramAd from "../assets/portfolio/instagramAd.jpg"
+import KZLXFlyer from "../assets/portfolio/KZLXFlyer.jpg"
 
-import Research1 from "../assets/portfolio/research1.webp"
-import Research2 from "../assets/portfolio/research2.webp"
-import Research3 from "../assets/portfolio/research3.webp"
-import Research4 from "../assets/portfolio/research4.webp"
-import Research5 from "../assets/portfolio/research5.webp"
-import Research6 from "../assets/portfolio/research6.webp"
+import Research1 from "../assets/portfolio/research1.jpg"
+import Research2 from "../assets/portfolio/research2.jpg"
+import Research3 from "../assets/portfolio/research3.jpg"
+import Research4 from "../assets/portfolio/research4.jpg"
+import Research5 from "../assets/portfolio/research5.jpg"
+import Research6 from "../assets/portfolio/research6.jpg"
 
 
 const portfolioData = [
@@ -176,7 +176,7 @@ const portfolioData = [
     },
     {
         id: 9,
-        title: "AI Generated Webpages Research",
+        title: "AI Generated jpgages Research",
         category: "other",
         tools: ["Research","AI Chatbots", "Code Analysis"],
         images: [
@@ -187,7 +187,7 @@ const portfolioData = [
             Research5,
             Research6,
         ],
-        description: "Alongside Julianna Marshall and Brooklen Black, I co-authored a study comparing how effectively five AI chatbots (ChatGPT, Claude, DeepSeek, Google Gemini, and Meta AI) could recreate a control webpage from a detailed prompt. We evaluated each output against the control and graded both code quality and chatbot usability. Across both our Spring and Fall 2025 research, Claude consistently produced the most accurate output and best user experience, though we found varying code quality and best practices across all chatbots. We presented our findings as a research posters at CCSC in Des Moines, IA and MINK WIC in Kansas City, MO.",
+        description: "Alongside Julianna Marshall and Brooklen Black, I co-authored a study comparing how effectively five AI chatbots (ChatGPT, Claude, DeepSeek, Google Gemini, and Meta AI) could recreate a control jpgage from a detailed prompt. We evaluated each output against the control and graded both code quality and chatbot usability. Across both our Spring and Fall 2025 research, Claude consistently produced the most accurate output and best user experience, though we found varying code quality and best practices across all chatbots. We presented our findings as a research posters at CCSC in Des Moines, IA and MINK WIC in Kansas City, MO.",
     }
 
 ]
