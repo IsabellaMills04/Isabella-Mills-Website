@@ -22,9 +22,8 @@ function Resume() {
               color: 'var(--green-dark)',
               border: '3px solid var(--green-dark)',
               fontFamily: 'var(--montserrat)',
-              fontSize: { xs: '14px', md: '18px' },
               borderRadius: '30px',
-              padding: { xs: '8px 16px', md: '10px 30px' },
+              padding: '10px 30px',
               transition: 'all ease 0.2s',
               '&:hover': {
                 backgroundColor: 'var(--green-dark)',
@@ -32,7 +31,7 @@ function Resume() {
                 transform: 'scale(1.05)',
               }
             }}>
-              <DownloadIcon fontSize='large'/>
+              <DownloadIcon sx={{ fontSize: { xs: '1.5rem', md: '2rem' }}}/>
             </Button>
           </a>
         </div>
