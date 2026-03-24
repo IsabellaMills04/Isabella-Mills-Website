@@ -6,7 +6,7 @@ function About() {
   return (
 
     <div className="about-container">
-      <p style={{textAlign: "center"}}>*STILL UNDER DEVELOPMENT*</p>
+      {/* <p style={{textAlign: "center"}}>*STILL UNDER DEVELOPMENT*</p>
 
 
       <section className="about-hero">
@@ -59,7 +59,7 @@ function About() {
       </section>
 
       <p style={{textAlign: "center"}}>*STILL UNDER DEVELOPMENT*</p>
-      
+       */}
     </div>
   )
 }

@@ -33,7 +33,7 @@ function Footer() {
 
   return (
     <div className="footer">
-        <footer className="leftSide">
+        <footer className="footer-left">
           <h1>Contact Me</h1>
           <Stack spacing={1.5}>
             <input
@@ -61,13 +61,13 @@ function Footer() {
             />
             <div className="submit">
               <button onClick={handleSubmit} className="submit-btn">Send</button>
-              {status === "error" && <p style={{ color: "var(--error", fontStyle: "italic" }}>Something went wrong. Try again.</p>}
+              {status === "error" && <p style={{ color: "var(--error)", fontStyle: "italic" }}>Something went wrong. Try again.</p>}
               {status === "success" && <p style={{ color: "var(--white)"}}>Thanks! I'll get back to you soon.</p>}
             </div>
           </Stack>
         </footer>
 
-        <footer className="rightSide">
+        <footer className="footer-right">
           <h1>Links</h1>
           <div className="cards-row">
             <div className="mini-card">

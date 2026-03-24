@@ -36,7 +36,7 @@ function Home() {
             <img src={AboutCollage}/>
         </div>
         <div className="rightSide">
-          <h1>A Glimse</h1>
+          <h1>A Glimpse</h1>
           <h2>into the aspiring developer.</h2>
           <p>I’m a Computer Science and Digital Media student passionate 
             about building clean, user-focused web applications. I enjoy 
