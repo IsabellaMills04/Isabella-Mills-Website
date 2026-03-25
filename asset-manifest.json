@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Isabella-Mills-Website/static/css/main.2edb8663.css",
-    "main.js": "/Isabella-Mills-Website/static/js/main.8c76118a.js",
+    "main.css": "/Isabella-Mills-Website/static/css/main.c0517198.css",
+    "main.js": "/Isabella-Mills-Website/static/js/main.c68ffa96.js",
     "static/js/453.fbfbb3e3.chunk.js": "/Isabella-Mills-Website/static/js/453.fbfbb3e3.chunk.js",
     "static/media/isabella.jpg": "/Isabella-Mills-Website/static/media/isabella.8c720986b0ebe04023bf.jpg",
     "static/media/isabella2.jpg": "/Isabella-Mills-Website/static/media/isabella2.b549f2f85de6000c313c.jpg",
@@ -50,12 +50,12 @@
     "static/media/logo.png": "/Isabella-Mills-Website/static/media/logo.38da208f302e724857d2.png",
     "static/media/logotype.png": "/Isabella-Mills-Website/static/media/logotype.be8606f3e9614ed80993.png",
     "index.html": "/Isabella-Mills-Website/index.html",
-    "main.2edb8663.css.map": "/Isabella-Mills-Website/static/css/main.2edb8663.css.map",
-    "main.8c76118a.js.map": "/Isabella-Mills-Website/static/js/main.8c76118a.js.map",
+    "main.c0517198.css.map": "/Isabella-Mills-Website/static/css/main.c0517198.css.map",
+    "main.c68ffa96.js.map": "/Isabella-Mills-Website/static/js/main.c68ffa96.js.map",
     "453.fbfbb3e3.chunk.js.map": "/Isabella-Mills-Website/static/js/453.fbfbb3e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2edb8663.css",
-    "static/js/main.8c76118a.js"
+    "static/css/main.c0517198.css",
+    "static/js/main.c68ffa96.js"
   ]
 }
